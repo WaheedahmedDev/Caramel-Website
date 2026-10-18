@@ -12,6 +12,7 @@ import {
 } from '../../utils/catalog';
 import { ImageFrame, Badge, Button } from '../common';
 import { Lightbox } from './Lightbox';
+import { assetUrl } from '../../utils/asset';
 
 export interface ProductDetailsModalProps {
   product: Product | null;
@@ -298,7 +299,7 @@ export const ProductDetailsModal: React.FC<ProductDetailsModalProps> = ({
                         }`}
                       >
                         <img
-                          src={imgSrc}
+                          src={assetUrl(imgSrc)}
                           alt={`${localizedName} — ${label}`}
                           loading="lazy"
                           decoding="async"

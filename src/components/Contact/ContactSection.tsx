@@ -7,6 +7,7 @@ import { SectionHeader, Button } from '../common';
 import { InstagramIcon, TikTokIcon, WhatsAppIcon } from './SocialLinks';
 import { formatEGPPrice } from '../../utils/catalog';
 import { buildProductInquiryMessage, getProductInquiryUrl } from '../../utils/inquiry';
+import { assetUrl } from '../../utils/asset';
 
 export interface ActiveInquiryState {
   product: Product;
@@ -199,10 +200,10 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
               }}
             >
               <img
-                src={
+                src={assetUrl(
                   activeInquiry.selectedVariant?.primaryImage ||
                   activeInquiry.product.primaryImage
-                }
+                )}
                 alt={resolveText(activeInquiry.product.name)}
                 style={{
                   width: '64px',

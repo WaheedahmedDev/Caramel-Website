@@ -3,6 +3,7 @@ import { Menu, X } from 'lucide-react';
 import { brandConfig } from '../../config/brand';
 import { usePreferences } from '../../context/PreferencesContext';
 import { LanguageSwitcher, ThemeToggle } from '../common';
+import { assetUrl } from '../../utils/asset';
 
 export interface HeaderProps {
   onSelectCategory?: (category: 'all' | 'handbags' | 'apparel' | 'accessories') => void;
@@ -77,7 +78,7 @@ export const Header: React.FC<HeaderProps> = ({ onSelectCategory }) => {
           onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--color-text-primary)')}
         >
           <img
-            src="/images/caramel-logo-badge.png"
+            src={assetUrl('/images/caramel-logo-badge.png')}
             alt="Caramel Seal"
             style={{
               width: '32px',

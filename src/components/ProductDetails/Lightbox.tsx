@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { X, ChevronLeft, ChevronRight, ZoomIn, ZoomOut, ImageOff } from 'lucide-react';
 import { usePreferences } from '../../context/PreferencesContext';
+import { assetUrl } from '../../utils/asset';
 
 export interface LightboxProps {
   isOpen: boolean;
@@ -218,7 +219,7 @@ export const Lightbox: React.FC<LightboxProps> = ({
           </div>
         ) : (
           <img
-            src={currentImage}
+            src={assetUrl(currentImage)}
             alt={`${productName} — ${counterText}`}
             className={`lightbox-image ${isZoomed ? 'zoomed' : ''}`}
             onError={() => setHasError(true)}

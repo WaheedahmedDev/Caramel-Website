@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { ExternalLink } from 'lucide-react';
 import { usePreferences } from '../../context/PreferencesContext';
 import { ContactConfig } from '../../types/config';
+import { assetUrl } from '../../utils/asset';
 
 export interface SocialLinksProps {
   contactConfig: ContactConfig;
@@ -158,7 +159,7 @@ export const SocialLinks: React.FC<SocialLinksProps> = ({ contactConfig, variant
           }}
         >
           <img
-            src="/images/caramel-logo-badge.png"
+            src={assetUrl('/images/caramel-logo-badge.png')}
             alt="Caramel Logo"
             style={{
               width: '100%',

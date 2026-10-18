@@ -3,6 +3,7 @@ import { X, CheckCircle } from 'lucide-react';
 import { CustomerReview } from '../../types/review';
 import { usePreferences } from '../../context/PreferencesContext';
 import { Badge } from '../common';
+import { assetUrl } from '../../utils/asset';
 
 export interface ReviewLightboxProps {
   review: CustomerReview | null;
@@ -153,7 +154,7 @@ export const ReviewLightbox: React.FC<ReviewLightboxProps> = ({
           }}
         >
           <img
-            src={review.screenshotImage}
+            src={assetUrl(review.screenshotImage)}
             alt={alt}
             style={{
               maxWidth: '100%',

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ImageOff } from 'lucide-react';
+import { assetUrl } from '../../utils/asset';
 
 export interface ImageFrameProps {
   src: string;
@@ -56,7 +57,7 @@ export const ImageFrame: React.FC<ImageFrameProps> = ({
         </div>
       ) : (
         <img
-          src={src}
+          src={assetUrl(src)}
           alt={alt}
           loading={priority ? 'eager' : 'lazy'}
           decoding="async"

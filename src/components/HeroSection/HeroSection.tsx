@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowUpRight, Sparkles } from 'lucide-react';
 import { usePreferences } from '../../context/PreferencesContext';
+import { assetUrl } from '../../utils/asset';
 
 export const HeroSection: React.FC = () => {
   const { lang, isRTL, t } = usePreferences();
@@ -230,7 +231,7 @@ export const HeroSection: React.FC = () => {
               }}
             >
               <img
-                src="/images/fashion-cutouts/handbag-caramel.webp"
+                src={assetUrl('/images/fashion-cutouts/handbag-caramel.webp')}
                 alt="Caramel Signature Luxury Leather Handbag"
                 loading="eager"
                 decoding="async"
@@ -281,7 +282,7 @@ export const HeroSection: React.FC = () => {
         }}
       >
         <img
-          src="/images/fashion-cutouts/jacket-boucle.webp"
+          src={assetUrl('/images/fashion-cutouts/jacket-boucle.webp')}
           alt=""
           loading="lazy"
           style={{ width: '100%', height: 'auto', display: 'block' }}
@@ -304,7 +305,7 @@ export const HeroSection: React.FC = () => {
         }}
       >
         <img
-          src="/images/fashion-cutouts/dress-elegant.webp"
+          src={assetUrl('/images/fashion-cutouts/dress-elegant.webp')}
           alt=""
           loading="lazy"
           style={{ width: '100%', height: 'auto', display: 'block' }}

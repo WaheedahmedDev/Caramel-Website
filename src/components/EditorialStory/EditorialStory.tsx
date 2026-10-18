@@ -1,6 +1,7 @@
 import React from 'react';
 import { Sparkles, Layers, ShieldCheck } from 'lucide-react';
 import { usePreferences } from '../../context/PreferencesContext';
+import { assetUrl } from '../../utils/asset';
 
 export interface EditorialStoryProps {
   onSelectCategory?: (category: 'all' | 'handbags' | 'apparel' | 'accessories') => void;
@@ -49,7 +50,7 @@ export const EditorialStory: React.FC<EditorialStoryProps> = () => {
             }}
           >
             <img
-              src="/images/editorial-spotlight.jpg"
+              src={assetUrl('/images/editorial-spotlight.jpg')}
               alt={t.editorial.title}
               loading="lazy"
               decoding="async"
