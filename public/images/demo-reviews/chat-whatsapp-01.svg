@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#24150D"/>
+      <stop offset="100%" stop-color="#190E08"/>
+    </linearGradient>
+    <linearGradient id="bubbleClient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#341D12"/>
+      <stop offset="100%" stop-color="#2B170E"/>
+    </linearGradient>
+    <linearGradient id="bubbleBrand" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#452719"/>
+      <stop offset="100%" stop-color="#381E13"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="450" height="800" rx="16" fill="url(#bgGrad)"/>
+  <rect width="446" height="796" x="2" y="2" rx="14" fill="none" stroke="#D5B078" stroke-opacity="0.18" stroke-width="1.5"/>
+
+  <!-- Chat Header Bar -->
+  <rect width="450" height="90" rx="16" fill="#1C100A" fill-opacity="0.95"/>
+  <line x1="0" y1="90" x2="450" y2="90" stroke="#452719" stroke-width="1"/>
+  
+  <!-- WhatsApp Icon & Verified Profile -->
+  <circle cx="50" cy="45" r="22" fill="#25D366" fill-opacity="0.15" stroke="#25D366" stroke-width="1.5"/>
+  <path d="M42 53 L43 49 C41.5 46.5 41.5 43.5 43 41 C45.5 37 50.5 35.5 54.5 38 C58.5 40.5 60 45.5 57.5 49.5 C56 52 53 53.5 50 53.5 L42 53 Z" fill="#25D366"/>
+  
+  <text x="85" y="40" font-family="'Cairo', sans-serif" font-size="16" font-weight="700" fill="#FAF7F2">خدمة عملاء كاراميل VIP</text>
+  <text x="85" y="60" font-family="'Cairo', sans-serif" font-size="12" fill="#25D366">متصل الآن • WhatsApp Direct</text>
+
+  <!-- Demo Watermark Top Banner -->
+  <rect x="35" y="110" width="380" height="36" rx="6" fill="#D5B078" fill-opacity="0.12" stroke="#D5B078" stroke-opacity="0.35"/>
+  <text x="225" y="133" text-anchor="middle" font-family="'Cairo', sans-serif" font-size="12" font-weight="600" fill="#D5B078">نموذج معاينة تجريبي • DEMO PREVIEW</text>
+
+  <!-- Timestamp Pill -->
+  <rect x="175" y="170" width="100" height="24" rx="12" fill="#1C100A" fill-opacity="0.8"/>
+  <text x="225" y="186" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#B89981">اليوم 2:45 PM</text>
+
+  <!-- Client Bubble 1 (Left/Incoming) -->
+  <rect x="25" y="220" width="310" height="95" rx="14" fill="url(#bubbleClient)" stroke="#452719" stroke-width="1"/>
+  <text x="45" y="250" font-family="'Cairo', sans-serif" font-size="14" fill="#FAF7F2">مساء الخير، حابة أستفسر عن شنطة</text>
+  <text x="45" y="275" font-family="'Cairo', sans-serif" font-size="14" font-weight="700" fill="#D5B078">Caramel Signature Leather Tote</text>
+  <text x="45" y="300" font-family="'Cairo', sans-serif" font-size="13" fill="#E9D8C3">هل متوفر منها لون Caramel Cognac؟</text>
+
+  <!-- Showroom Bubble (Right/Outgoing) -->
+  <rect x="115" y="335" width="310" height="105" rx="14" fill="url(#bubbleBrand)" stroke="#D5B078" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="135" y="365" font-family="'Cairo', sans-serif" font-size="13.5" fill="#FAF7F2">أهلاً بكِ في كاراميل 🤍</text>
+  <text x="135" y="390" font-family="'Cairo', sans-serif" font-size="13.5" fill="#E9D8C3">نعم فندم، القطعة متوفرة حالياً بالجلد الطبيعي</text>
+  <text x="135" y="415" font-family="'Cairo', sans-serif" font-size="13.5" fill="#E9D8C3">مع علبة الهدايا الفاخرة وشحن فوري.</text>
+
+  <!-- Client Bubble 2 (Feedback) -->
+  <rect x="25" y="465" width="330" height="110" rx="14" fill="url(#bubbleClient)" stroke="#452719" stroke-width="1"/>
+  <text x="45" y="495" font-family="'Cairo', sans-serif" font-size="14" font-weight="600" fill="#FAF7F2">استلمت الأوردر النهاردة والشنطة</text>
+  <text x="45" y="522" font-family="'Cairo', sans-serif" font-size="14" font-weight="700" fill="#D5B078">تحفة جداً خامة وتقفيل وتغليف راقي!</text>
+  <text x="45" y="550" font-family="'Cairo', sans-serif" font-size="13" fill="#E9D8C3">شكراً جداً على ذوقكم وسرعة التوصيل ✨</text>
+
+  <!-- Showroom Thanks -->
+  <rect x="145" y="595" width="280" height="70" rx="14" fill="url(#bubbleBrand)" stroke="#D5B078" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="165" y="625" font-family="'Cairo', sans-serif" font-size="13" fill="#FAF7F2">سعداء جداً بثقتكِ وذوقكِ الرفيع دايماً!</text>
+  <text x="165" y="648" font-family="'Cairo', sans-serif" font-size="12" fill="#D5B078">Caramel Luxury Leather Team ✨</text>
+
+  <!-- Bottom Replacement Notice -->
+  <rect x="30" y="700" width="390" height="65" rx="10" fill="#1C100A" fill-opacity="0.9" stroke="#744D34" stroke-dasharray="4 4"/>
+  <text x="225" y="726" text-anchor="middle" font-family="'Cairo', sans-serif" font-size="12" font-weight="600" fill="#E9D8C3">مساحة مخصصة للقطة شاشة المحادثة الفعلية</text>
+  <text x="225" y="748" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#B89981">Authentic Screenshot Placement • WhatsApp DM</text>
+</svg>

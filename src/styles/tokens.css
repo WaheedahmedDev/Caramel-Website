@@ -1,0 +1,232 @@
+/**
+ * CARAMEL FASHION SHOWROOM — DESIGN SYSTEM TOKENS
+ *
+ * Art Direction: Premium, contemporary, youthful, chic, and editorial.
+ * Strict Architecture:
+ * - Dark mode by default (layered charcoal/near-black, readable text, tasteful gold/amber accents).
+ * - Light mode is an intentional, refined warm neutral (never a blind filter inversion).
+ * - Restrained corner radii (2px–8px) to prevent generic bubbly UI.
+ * - Zero filters/overlays that alter the merchandise colors of product photography.
+ * - Built on CSS Custom Properties supporting CSS logical properties for seamless RTL/LTR.
+ */
+
+:root {
+  /* =========================================================================
+     1. TYPOGRAPHY FAMILIES & FALLBACKS
+     ========================================================================= */
+  --font-serif: 'Cormorant Garamond', Garamond, Georgia, serif;
+  --font-sans: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-arabic: 'Cairo', 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Fluid Type Scale */
+  --text-2xs: 0.6875rem;                       /* 11px */
+  --text-xs:  0.75rem;                         /* 12px */
+  --text-sm:  0.875rem;                        /* 14px */
+  --text-base: 1rem;                           /* 16px */
+  --text-lg:  1.125rem;                        /* 18px */
+  --text-xl:  1.25rem;                         /* 20px */
+  --text-2xl: 1.5rem;                          /* 24px */
+  --text-3xl: 2rem;                            /* 32px */
+  --text-4xl: clamp(2.25rem, 3.5vw, 3rem);     /* 36px - 48px */
+  --text-hero: clamp(2.75rem, 6vw, 4.5rem);    /* 44px - 72px */
+
+  /* Line Heights */
+  --leading-none: 1;
+  --leading-tight: 1.15;
+  --leading-snug: 1.35;
+  --leading-normal: 1.6;
+  --leading-relaxed: 1.8;
+
+  /* Letter Spacing (Latin) */
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.06em;
+  --tracking-widest: 0.18em;
+
+  /* =========================================================================
+     2. SPACING SCALE (Consistent 4px/8px modular rhythm)
+     ========================================================================= */
+  --space-3xs: 0.125rem;  /* 2px */
+  --space-2xs: 0.25rem;   /* 4px */
+  --space-xs:  0.5rem;    /* 8px */
+  --space-sm:  0.75rem;   /* 12px */
+  --space-md:  1rem;      /* 16px */
+  --space-lg:  1.5rem;    /* 24px */
+  --space-xl:  2rem;      /* 32px */
+  --space-2xl: 3rem;      /* 48px */
+  --space-3xl: 4.5rem;    /* 72px */
+  --space-4xl: 6rem;      /* 96px */
+
+  /* =========================================================================
+     3. RESTRAINED RADII (Editorial elegance, avoiding childish bubbles)
+     ========================================================================= */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-pill: 9999px;
+
+  /* =========================================================================
+     4. ASPECT RATIOS FOR IMAGE RESILIENCE
+     ========================================================================= */
+  --aspect-product: 4 / 5;   /* Fashion portrait ratio */
+  --aspect-hero: 16 / 9;
+  --aspect-square: 1 / 1;
+  --aspect-wide: 21 / 9;
+
+  /* =========================================================================
+     5. TRANSITIONS & TIMINGS
+     ========================================================================= */
+  --transition-instant: 100ms ease;
+  --transition-fast: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 280ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 450ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* =========================================================================
+     6. LAYOUT WIDTHS & RESPONSIVE GUTTERS
+     ========================================================================= */
+  --max-width-content: 1380px;
+  --max-width-narrow: 840px;
+  --gutter-inline: var(--space-md); /* Overridden via media queries */
+
+  /* Responsive Breakpoints Reference Tokens */
+  --breakpoint-xs: 360px;
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1366px;
+  --breakpoint-2xl: 1920px;
+
+  /* =========================================================================
+     7. LAYER ELEVATIONS (Z-INDEX)
+     ========================================================================= */
+  --z-floating-action: 45;
+  --z-header: 50;
+  --z-modal-backdrop: 100;
+  --z-modal: 110;
+  --z-lightbox-backdrop: 200;
+  --z-lightbox: 210;
+  --z-toast: 300;
+}
+
+/* Responsive Gutter Tuning */
+@media (min-width: 768px) {
+  :root {
+    --gutter-inline: var(--space-xl);
+  }
+}
+@media (min-width: 1366px) {
+  :root {
+    --gutter-inline: var(--space-2xl);
+  }
+}
+
+/* =========================================================================
+   7. DUAL LUXURY THEME SYSTEM: DARK BROWN MODE & CREAM LIGHT MODE
+   ========================================================================= */
+
+/* A. DEFAULT DARK MODE: Deep Espresso Mocha & Warm Champagne Gold */
+:root,
+[data-theme="dark"] {
+  /* Surfaces — Deep Rich Espresso & Warm Mocha */
+  --color-bg-base: #1C100A;             /* Signature deep mocha chocolate canvas */
+  --color-bg-primary: #1C100A;          /* Backwards-compatible alias */
+  --color-bg-surface: #27170F;          /* Warm dark chocolate container surface */
+  --color-bg-elevated: #341D12;         /* Floating cards, modals, popovers */
+  --color-bg-subtle: #22130C;           /* Section alternate backdrop */
+  --color-bg-glass: rgba(39, 23, 15, 0.88); /* Warm frosted glass */
+
+  /* Dedicated product backdrop (neutral warm dark tone) */
+  --color-product-surface: #20120B;
+
+  /* Typography Colors — Warm Porcelain & Soft Caramel */
+  --color-text-primary: #FAF7F2;        /* Warm crisp porcelain ivory */
+  --color-text-secondary: #E9D8C3;      /* Warm light caramel beige */
+  --color-text-tertiary: #B89981;       /* Muted warm hazelnut */
+  --color-text-inverse: #1C100A;
+
+  /* Reference Champagne Caramel Gold Accents */
+  --color-accent: #D5B078;              /* Warm signature champagne gold */
+  --color-accent-hover: #EAC996;        /* Luminous caramel hover */
+  --color-accent-subtle: rgba(213, 176, 120, 0.12);
+  --color-on-accent: #1C100A;
+
+  /* Borders & Dividers */
+  --color-border-subtle: rgba(213, 176, 120, 0.16); /* Deep mocha border */
+  --color-border-strong: rgba(213, 176, 120, 0.35); /* Rich caramel brown */
+  --color-border-accent: rgba(213, 176, 120, 0.45);
+
+  /* Functional Status */
+  --color-discount-badge: #8B2515;      /* Warm rust-burgundy for sales */
+  --color-on-discount: #FEE2E2;
+  --color-demo-badge: rgba(213, 176, 120, 0.18);
+  --color-on-demo: #D5B078;
+
+  /* Focus & Elevation */
+  --color-focus: #D5B078;
+  --shadow-sm: 0 2px 6px rgba(10, 6, 4, 0.4);
+  --shadow-md: 0 6px 18px rgba(10, 6, 4, 0.55);
+  --shadow-card: 0 14px 34px -8px rgba(10, 6, 4, 0.75), 0 0 1px rgba(213, 176, 120, 0.15);
+  --shadow-card-hover: 0 22px 45px -8px rgba(10, 6, 4, 0.85), 0 0 24px rgba(213, 176, 120, 0.22);
+  --shadow-elevated: 0 26px 52px -12px rgba(10, 6, 4, 0.9);
+  --shadow-modal: 0 35px 70px -12px rgba(0, 0, 0, 0.9);
+
+  /* Hero Grounding & Glow */
+  --hero-bag-grounding-shadow: radial-gradient(ellipse at center, rgba(12, 6, 4, 0.75) 0%, rgba(12, 6, 4, 0.35) 45%, transparent 75%);
+  --hero-title-shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
+  --ambient-glow-top: radial-gradient(ellipse at center, rgba(213, 176, 120, 0.06) 0%, rgba(39, 23, 15, 0.03) 50%, transparent 75%);
+  --ambient-glow-bottom: radial-gradient(ellipse at center, rgba(46, 26, 17, 0.4) 0%, transparent 70%);
+}
+
+/* B. CREAM LIGHT MODE: Warm Off-White, Soft Ivory & Rich Dark Brown Typography */
+[data-theme="light"] {
+  /* Surfaces — Soft Ivory Cream & Warm Off-White (Never stark pure white) */
+  --color-bg-base: #FBF7F2;             /* Soft velvety ivory off-white canvas */
+  --color-bg-primary: #FBF7F2;          /* Backwards-compatible alias */
+  --color-bg-surface: #F4EDE3;          /* Warm almond cream container surface */
+  --color-bg-elevated: #FFFFFF;         /* Crisp clean warm neutral cards & modals */
+  --color-bg-subtle: #EFE5D6;           /* Subtle deeper cream section backdrop */
+  --color-bg-glass: rgba(251, 247, 242, 0.92); /* Translucent cream glass */
+
+  /* Dedicated product backdrop (warm neutral cream tone) */
+  --color-product-surface: #F7F1E7;
+
+  /* Typography Colors — Rich Dark Espresso & Roasted Cocoa */
+  --color-text-primary: #26160F;        /* Deep espresso chocolate brown (contrast > 11:1) */
+  --color-text-secondary: #5E4436;      /* Warm roasted cocoa brown (contrast > 6:1) */
+  --color-text-tertiary: #876B5B;       /* Muted warm hazelnut mocha (contrast > 4.5:1) */
+  --color-text-inverse: #FAF7F2;
+
+  /* Caramel Amber Accents */
+  --color-accent: #9E6938;              /* Sophisticated warm caramel amber */
+  --color-accent-hover: #824F23;        /* Deeper toasted caramel */
+  --color-accent-subtle: rgba(158, 105, 56, 0.12);
+  --color-on-accent: #FFFFFF;
+
+  /* Borders & Dividers */
+  --color-border-subtle: rgba(94, 68, 54, 0.14); /* Soft warm beige-brown */
+  --color-border-strong: rgba(94, 68, 54, 0.28); /* Warm cocoa outline */
+  --color-border-accent: rgba(158, 105, 56, 0.40); /* Amber caramel ring */
+
+  /* Functional Status */
+  --color-discount-badge: #9E2A1A;      /* Rich ruby red */
+  --color-on-discount: #FFFFFF;
+  --color-demo-badge: rgba(158, 105, 56, 0.14);
+  --color-on-demo: #78441A;
+
+  /* Focus & Elevation */
+  --color-focus: #9E6938;
+  --shadow-sm: 0 2px 6px rgba(42, 24, 16, 0.05);
+  --shadow-md: 0 6px 18px rgba(42, 24, 16, 0.08);
+  --shadow-card: 0 10px 26px -4px rgba(42, 24, 16, 0.08), 0 0 1px rgba(94, 68, 54, 0.15);
+  --shadow-card-hover: 0 18px 36px -6px rgba(42, 24, 16, 0.14), 0 0 16px rgba(158, 105, 56, 0.15);
+  --shadow-elevated: 0 20px 42px -8px rgba(42, 24, 16, 0.12);
+  --shadow-modal: 0 25px 60px -10px rgba(42, 24, 16, 0.22);
+
+  /* Hero Grounding & Glow */
+  --hero-bag-grounding-shadow: radial-gradient(ellipse at center, rgba(60, 36, 20, 0.32) 0%, rgba(60, 36, 20, 0.12) 45%, transparent 75%);
+  --hero-title-shadow: 0 4px 18px rgba(158, 105, 56, 0.15);
+  --ambient-glow-top: radial-gradient(ellipse at center, rgba(158, 105, 56, 0.08) 0%, rgba(244, 237, 227, 0.04) 50%, transparent 75%);
+  --ambient-glow-bottom: radial-gradient(ellipse at center, rgba(239, 229, 214, 0.7) 0%, transparent 70%);
+}
+
