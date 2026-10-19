@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Caramel — Luxury Women's Fashion Showroom & Leather Goods. كاراميل — معرض أزياء وحقائب نسائية راقية" />
+    <title>CARAMEL | كاراميل</title>
+
+    <!-- Pre-hydration theme & language anti-flash script (Dark Brown & Cream Light) -->
+    <script>
+      (function() {
+        try {
+          var savedTheme = localStorage.getItem('caramel_theme');
+          if (savedTheme === 'light' || savedTheme === 'dark') {
+            document.documentElement.setAttribute('data-theme', savedTheme);
+          } else {
+            document.documentElement.setAttribute('data-theme', 'dark');
+          }
+          var savedLang = localStorage.getItem('caramel_lang');
+          if (savedLang === 'en') {
+            document.documentElement.lang = 'en';
+            document.documentElement.dir = 'ltr';
+          } else {
+            document.documentElement.lang = 'ar';
+            document.documentElement.dir = 'rtl';
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- Google Fonts: Cormorant Garamond (Editorial Serif), Montserrat (Modern Sans), Cairo (Arabic Luxury) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/Caramel-Website/assets/index-B_F6sMFp.js"></script>
+    <link rel="stylesheet" crossorigin href="/Caramel-Website/assets/index-BhXnbxy3.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

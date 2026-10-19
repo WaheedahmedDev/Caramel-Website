@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#24150D"/>
+      <stop offset="100%" stop-color="#190E08"/>
+    </linearGradient>
+    <linearGradient id="bubbleClient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#341D12"/>
+      <stop offset="100%" stop-color="#2B170E"/>
+    </linearGradient>
+    <linearGradient id="bubbleBrand" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#452719"/>
+      <stop offset="100%" stop-color="#381E13"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="450" height="800" rx="16" fill="url(#bgGrad)"/>
+  <rect width="446" height="796" x="2" y="2" rx="14" fill="none" stroke="#D5B078" stroke-opacity="0.18" stroke-width="1.5"/>
+
+  <!-- Chat Header Bar -->
+  <rect width="450" height="90" rx="16" fill="#1C100A" fill-opacity="0.95"/>
+  <line x1="0" y1="90" x2="450" y2="90" stroke="#452719" stroke-width="1"/>
+  
+  <!-- Facebook Blue Badge -->
+  <circle cx="50" cy="45" r="22" fill="#1877F2"/>
+  <path d="M52 57 V45 H56 L57 40 H52 V37 C52 35.6 52.4 34.6 54.4 34.6 H57 V30.2 C56.5 30.1 55 30 53.2 30 C49.4 30 46.8 32.3 46.8 36.6 V40 H42.5 V45 H46.8 V57 H52 Z" fill="#FFFFFF"/>
+  
+  <text x="85" y="40" font-family="'Cairo', sans-serif" font-size="16" font-weight="700" fill="#FAF7F2">Caramel Fashion</text>
+  <text x="85" y="60" font-family="sans-serif" font-size="12" fill="#1877F2">Facebook Official Page • Messenger</text>
+
+  <!-- Demo Watermark Top Banner -->
+  <rect x="35" y="110" width="380" height="36" rx="6" fill="#D5B078" fill-opacity="0.12" stroke="#D5B078" stroke-opacity="0.35"/>
+  <text x="225" y="133" text-anchor="middle" font-family="'Cairo', sans-serif" font-size="12" font-weight="600" fill="#D5B078">نموذج معاينة تجريبي • DEMO PREVIEW</text>
+
+  <!-- Timestamp Pill -->
+  <rect x="175" y="170" width="100" height="24" rx="12" fill="#1C100A" fill-opacity="0.8"/>
+  <text x="225" y="186" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#B89981">الأحد 8:45 PM</text>
+
+  <!-- Client Bubble 1 -->
+  <rect x="25" y="220" width="320" height="100" rx="14" fill="url(#bubbleClient)" stroke="#452719" stroke-width="1"/>
+  <text x="45" y="250" font-family="'Cairo', sans-serif" font-size="14" fill="#FAF7F2">مساء الخير، كنت بسأل عن</text>
+  <text x="45" y="275" font-family="'Cairo', sans-serif" font-size="14" font-weight="700" fill="#D5B078">فستان الساتان المطوي Elysian Dress</text>
+  <text x="45" y="302" font-family="'Cairo', sans-serif" font-size="13" fill="#E9D8C3">هل مناسب لحضور حفل زفاف؟</text>
+
+  <!-- Showroom Bubble -->
+  <rect x="105" y="340" width="320" height="100" rx="14" fill="url(#bubbleBrand)" stroke="#D5B078" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="125" y="370" font-family="'Cairo', sans-serif" font-size="13.5" fill="#FAF7F2">مساء النور أهلاً بكِ ✨</text>
+  <text x="125" y="395" font-family="'Cairo', sans-serif" font-size="13.5" fill="#E9D8C3">بالتأكيد فندم، الفستان تصميمه ميدي أنيق</text>
+  <text x="125" y="420" font-family="'Cairo', sans-serif" font-size="13.5" fill="#E9D8C3">بلون برونزي شمبانيا فخم جداً للمناسبات السعيدة.</text>
+
+  <!-- Client Feedback -->
+  <rect x="25" y="465" width="340" height="110" rx="14" fill="url(#bubbleClient)" stroke="#452719" stroke-width="1"/>
+  <text x="45" y="495" font-family="'Cairo', sans-serif" font-size="14" font-weight="600" fill="#FAF7F2">الفستان كان بطل السهرة بجد!</text>
+  <text x="45" y="522" font-family="'Cairo', sans-serif" font-size="14" font-weight="700" fill="#D5B078">خامته الحريرية ولمعته الهادية مبهرة</text>
+  <text x="45" y="550" font-family="'Cairo', sans-serif" font-size="13" fill="#E9D8C3">شكراً على سرعة التوصيل وذوقكم الراقي جداً 💫</text>
+
+  <!-- Showroom Thanks -->
+  <rect x="145" y="595" width="280" height="65" rx="14" fill="url(#bubbleBrand)" stroke="#D5B078" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="165" y="625" font-family="'Cairo', sans-serif" font-size="13" fill="#FAF7F2">دايماً منورة في كل مناسباتكِ السعيدة!</text>
+  <text x="165" y="646" font-family="'Cairo', sans-serif" font-size="12" fill="#D5B078">فريق أزياء كاراميل الفاخرة</text>
+
+  <!-- Bottom Replacement Notice -->
+  <rect x="30" y="700" width="390" height="65" rx="10" fill="#1C100A" fill-opacity="0.9" stroke="#744D34" stroke-dasharray="4 4"/>
+  <text x="225" y="726" text-anchor="middle" font-family="'Cairo', sans-serif" font-size="12" font-weight="600" fill="#E9D8C3">مساحة مخصصة للقطة شاشة المحادثة الفعلية</text>
+  <text x="225" y="748" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#B89981">Authentic Screenshot Placement • Facebook Messenger</text>
+</svg>
